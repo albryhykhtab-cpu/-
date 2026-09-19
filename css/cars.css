@@ -1,0 +1,93 @@
+.cars-page {
+    padding-bottom: 40px;
+}
+
+.cars-layout {
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    gap: 25px;
+    align-items: start;
+}
+
+.filters-box {
+    background: #f6f7f9;
+    border: 1px solid #e3e3e3;
+    padding: 18px;
+    border-radius: 5px;
+}
+
+.filters-box h2 {
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+
+.filters-box label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.filters-box input,
+.filters-box select {
+    width: 100%;
+    padding: 9px;
+    border: 1px solid #d8d8d8;
+    border-radius: 4px;
+    background: #fff;
+}
+
+.filters-box button {
+    width: 100%;
+    margin-top: 15px;
+    border: 0;
+    padding: 10px;
+    background: #07182d;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.details-button,
+.details-link {
+    display: block;
+    width: 100%;
+    margin-top: 12px;
+    background: #eeb51a;
+    color: #111;
+    border: 0;
+    padding: 8px 10px;
+    border-radius: 3px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.no-cars {
+    display: none;
+    padding: 15px;
+    text-align: center;
+    background: #fff3cd;
+    margin-top: 15px;
+}
+
+.ajax-details img {
+    width: 100%;
+    max-height: 230px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
+.ajax-details h3 {
+    margin-bottom: 10px;
+}
+
+.ajax-details p {
+    margin-bottom: 5px;
+}
+
+@media (max-width: 800px) {
+    .cars-layout {
+        grid-template-columns: 1fr;
+    }
+}

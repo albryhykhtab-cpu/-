@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="معرض سيارات حديث لعرض السيارات والمواصفات والأسعار.">
+    <title>CAR ZONE | معرض السيارات</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/cdfec64960.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="page-width header-row">
+        <a class="logo" href="index.html"><i class="fa-solid fa-car-side"></i> CAR ZONE</a>
+
+        <nav class="main-nav">
+            <a class="active" href="index.html">الرئيسية</a>
+            <a href="html/cars.html">السيارات</a>
+            <a href="html/about.html">من نحن</a>
+            <a href="html/contact.html">تواصل معنا</a>
+        </nav>
+
+        <a class="login-link" href="html/login.html">تسجيل الدخول</a>
+    </div>
+</header>
+
+<main>
+    <!-- Bootstrap Carousel -->
+    <section class="hero-section">
+        <div id="carsCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="hero-slide page-width">
+                        <div class="hero-text">
+                            <p class="hero-small">اختر سيارتك القادمة</p>
+                            <h1>سيارات حديثة بأسعار مناسبة</h1>
+                            <p>استعرض السيارات المتوفرة وتعرّف على الموديل والسعر والمواصفات بسهولة.</p>
+                            <div class="hero-buttons">
+                                <a class="btn-gold" href="html/cars.html">استعرض السيارات</a>
+                                <a class="btn-outline-car" href="html/contact.html">تواصل معنا</a>
+                            </div>
+                        </div>
+                        <div class="hero-image-wrap">
+                            <img src="img/hero-car.jpg" alt="سيارة حديثة">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="hero-slide page-width">
+                        <div class="hero-text">
+                            <p class="hero-small">خيارات متنوعة</p>
+                            <h2>سيدان، دفع رباعي ورياضية</h2>
+                            <p>اختر النوع المناسب لك من مجموعة السيارات الموجودة في المعرض.</p>
+                            <div class="hero-buttons">
+                                <a class="btn-gold" href="html/cars.html">شاهد المجموعة</a>
+                            </div>
+                        </div>
+                        <div class="hero-image-wrap">
+                            <img src="img/mustang.jpg" alt="سيارة رياضية">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carsCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carsCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <section class="categories page-width">
+        <div class="section-title">
+            <h2>أنواع السيارات</h2>
+            <span></span>
+        </div>
+
+        <div class="category-grid">
+            <article class="category-card">
+                <i class="fa-solid fa-car"></i>
+                <h3>سيدان</h3>
+                <p>عملية ومناسبة للاستخدام اليومي.</p>
+            </article>
+
+            <article class="category-card">
+                <i class="fa-solid fa-truck-pickup"></i>
+                <h3>دفع رباعي</h3>
+                <p>قوة ومساحة أكبر للرحلات.</p>
+            </article>
+
+            <article class="category-card">
+                <i class="fa-solid fa-gauge-high"></i>
+                <h3>رياضية</h3>
+                <p>أداء قوي وتصميم مميز.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="featured-section">
+        <div class="page-width">
+            <div class="section-title">
+                <h2>سيارات مميزة</h2>
+                <span></span>
+            </div>
+
+            <div class="cars-grid">
+                <article class="car-card">
+                    <img src="img/camry.jpg" alt="تويوتا كامري">
+                    <div class="car-body">
+                        <h3>تويوتا كامري 2023</h3>
+                        <p>سيدان مريحة واقتصادية.</p>
+                        <strong>$ 27,500</strong>
+                    </div>
+                </article>
+
+                <article class="car-card">
+                    <img src="img/tucson.jpg" alt="هيونداي توسان">
+                    <div class="car-body">
+                        <h3>هيونداي توسان 2023</h3>
+                        <p>دفع رباعي بتصميم عصري.</p>
+                        <strong>$ 30,800</strong>
+                    </div>
+                </article>
+
+                <article class="car-card">
+                    <img src="img/mustang.jpg" alt="فورد موستانج">
+                    <div class="car-body">
+                        <h3>فورد موستانج 2023</h3>
+                        <p>سيارة رياضية بأداء قوي.</p>
+                        <strong>$ 36,900</strong>
+                    </div>
+                </article>
+            </div>
+
+            <div class="center-button">
+                <a class="btn-gold" href="html/cars.html">عرض جميع السيارات</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-preview page-width">
+        <div class="about-preview-image">
+            <img src="img/showroom.jpg" alt="معرض السيارات">
+        </div>
+
+        <div class="about-preview-text">
+            <h2>عن معرضنا</h2>
+            <p>CAR ZONE موقع بسيط لعرض السيارات المتوفرة مع معلومات واضحة عن السعر والموديل ونوع السيارة.</p>
+            <ul>
+                <li>تصميم سهل الاستخدام.</li>
+                <li>مجموعة سيارات متنوعة.</li>
+                <li>صفحات مرتبة ومتجاوبة.</li>
+            </ul>
+            <a class="text-link" href="html/about.html">اعرف المزيد ←</a>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="page-width footer-row">
+        <p>© 2026 CAR ZONE - جميع الحقوق محفوظة</p>
+        <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </div>
+</footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

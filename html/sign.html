@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إنشاء حساب | CAR ZONE</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/sign.css">
+    <script src="https://kit.fontawesome.com/cdfec64960.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="signup-card">
+    <div class="form-side">
+        <div class="form-title">
+            <p>انضم إلينا</p>
+            <h1>إنشاء حساب جديد</h1>
+            <h4>أدخل بياناتك ثم اضغط إنشاء الحساب.</h4>
+        </div>
+
+        <form id="signUpForm" novalidate>
+            <label for="fullName">الاسم الكامل</label>
+            <div class="input-box">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" id="fullName" placeholder="اكتب اسمك">
+            </div>
+
+            <label for="signEmail">البريد الإلكتروني</label>
+            <div class="input-box">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" id="signEmail" placeholder="example@gmail.com">
+            </div>
+
+            <label for="password">كلمة المرور</label>
+            <div class="input-box">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" id="password" placeholder="8 أحرف على الأقل">
+            </div>
+
+            <label for="confirmPassword">تأكيد كلمة المرور</label>
+            <div class="input-box">
+                <i class="fa-solid fa-shield-halved"></i>
+                <input type="password" id="confirmPassword" placeholder="أعد كلمة المرور">
+            </div>
+
+            <div class="terms-row">
+                <input type="checkbox" id="agree">
+                <label for="agree">أوافق على الشروط والأحكام</label>
+            </div>
+
+            <div id="message"></div>
+            <button class="sign-button" type="submit">إنشاء الحساب</button>
+        </form>
+
+        <p class="login-text">لديك حساب؟ <a href="login.html">تسجيل الدخول</a></p>
+    </div>
+
+    <div class="signup-info">
+        <a href="../index.html" class="back-home">← العودة إلى الرئيسية</a>
+        <div>
+            <h2>CAR <span>ZONE</span></h2>
+            <h1>حساب جديد<br>بخطوات بسيطة</h1>
+            <p>أنشئ حسابك ثم ابدأ باستعراض السيارات المتوفرة.</p>
+        </div>
+        <img src="../img/tucson.jpg" alt="سيارة">
+    </div>
+</div>
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/sign.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>السيارات | CAR ZONE</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/cars.css">
+    <script src="https://kit.fontawesome.com/cdfec64960.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="page-width header-row">
+        <a class="logo" href="../index.html"><i class="fa-solid fa-car-side"></i> CAR ZONE</a>
+        <nav class="main-nav">
+            <a href="../index.html">الرئيسية</a>
+            <a class="active" href="cars.html">السيارات</a>
+            <a href="about.html">من نحن</a>
+            <a href="contact.html">تواصل معنا</a>
+        </nav>
+        <a class="login-link" href="login.html">تسجيل الدخول</a>
+    </div>
+</header>
+
+<main class="cars-page page-width">
+    <section class="page-heading">
+        <h1>السيارات المتوفرة</h1>
+        <p>اختر السيارة المناسبة وشاهد معلوماتها.</p>
+    </section>
+
+    <div class="cars-layout">
+        <aside class="filters-box">
+            <h2>بحث سريع</h2>
+            <label for="searchCar">اسم السيارة</label>
+            <input id="searchCar" type="text" placeholder="مثال: كامري">
+
+            <label for="carType">النوع</label>
+            <select id="carType">
+                <option value="all">الكل</option>
+                <option value="sedan">سيدان</option>
+                <option value="suv">دفع رباعي</option>
+                <option value="sport">رياضية</option>
+            </select>
+
+            <button id="showAll" type="button">عرض الكل</button>
+        </aside>
+
+        <section class="cars-list">
+            <div class="cars-grid" id="carsGrid">
+                <article class="car-card searchable-car" data-name="تويوتا كامري" data-type="sedan">
+                    <img src="../img/camry.jpg" alt="تويوتا كامري">
+                    <div class="car-body">
+                        <h3>تويوتا كامري 2023</h3>
+                        <p>سيدان - أوتوماتيك</p>
+                        <strong>$ 27,500</strong>
+                        <button id="camryBtn" class="details-button" type="button" data-bs-toggle="modal" data-bs-target="#camryModal">تفاصيل سريعة</button>
+                    </div>
+                </article>
+
+                <article class="car-card searchable-car" data-name="هيونداي توسان" data-type="suv">
+                    <img src="../img/tucson.jpg" alt="هيونداي توسان">
+                    <div class="car-body">
+                        <h3>هيونداي توسان 2023</h3>
+                        <p>دفع رباعي - أوتوماتيك</p>
+                        <strong>$ 30,800</strong>
+                        <button id="tucsonBtn" class="details-button" type="button" data-bs-toggle="modal" data-bs-target="#tucsonModal">تفاصيل سريعة</button>
+                    </div>
+                </article>
+
+                <article class="car-card searchable-car" data-name="كيا سيراتو" data-type="sedan">
+                    <img src="../img/cerato.jpg" alt="كيا سيراتو">
+                    <div class="car-body">
+                        <h3>كيا سيراتو 2022</h3>
+                        <p>سيدان - أوتوماتيك</p>
+                        <strong>$ 19,700</strong>
+                        <a class="details-link" href="contact.html">اسأل عنها</a>
+                    </div>
+                </article>
+
+                <article class="car-card searchable-car" data-name="فورد موستانج" data-type="sport">
+                    <img src="../img/mustang.jpg" alt="فورد موستانج">
+                    <div class="car-body">
+                        <h3>فورد موستانج 2023</h3>
+                        <p>رياضية - أوتوماتيك</p>
+                        <strong>$ 36,900</strong>
+                        <a class="details-link" href="contact.html">اسأل عنها</a>
+                    </div>
+                </article>
+            </div>
+
+            <p id="noCars" class="no-cars">لا توجد سيارة مطابقة للبحث.</p>
+        </section>
+    </div>
+</main>
+
+<!-- Modal 1: يتم تحميل المحتوى بواسطة Ajax -->
+<div class="modal fade" id="camryModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">تفاصيل تويوتا كامري</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="إغلاق"></button>
+            </div>
+            <div class="modal-body" id="camryContent">جاري تحميل التفاصيل...</div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal 2: يتم تحميل المحتوى بواسطة Ajax -->
+<div class="modal fade" id="tucsonModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">تفاصيل هيونداي توسان</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="إغلاق"></button>
+            </div>
+            <div class="modal-body" id="tucsonContent">جاري تحميل التفاصيل...</div>
+        </div>
+    </div>
+</div>
+
+<footer class="site-footer">
+    <div class="page-width footer-row">
+        <p>© 2026 CAR ZONE - جميع الحقوق محفوظة</p>
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </div>
+</footer>
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/cars.js"></script>
+</body>
+</html>

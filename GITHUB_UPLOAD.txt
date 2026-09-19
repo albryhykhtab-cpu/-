@@ -1,0 +1,12 @@
+رفع المشروع على GitHub:
+
+1- أنشئ Repository جديد في GitHub.
+2- افتح Terminal داخل مجلد المشروع.
+3- نفّذ الأوامر التالية:
+
+git init
+git add .
+git commit -m "web project"
+git branch -M main
+git remote add origin رابط_المستودع
+git push -u origin main

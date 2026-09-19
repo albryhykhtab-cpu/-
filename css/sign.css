@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: #f2f4f7;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.signup-card {
+    width: 90%;
+    max-width: 1000px;
+    min-height: 620px;
+    display: flex;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.form-side,
+.signup-info {
+    width: 50%;
+    padding: 40px;
+}
+
+.form-title p {
+    color: #b58000;
+    margin-bottom: 2px;
+}
+
+.form-title h1 {
+    margin: 0 0 5px;
+}
+
+.form-title h4 {
+    color: #777;
+    font-weight: normal;
+    margin-bottom: 18px;
+}
+
+form > label {
+    display: block;
+    margin: 9px 0 5px;
+    font-weight: bold;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 0 12px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 11px 0;
+    border: 0;
+    outline: 0;
+}
+
+.input-box i {
+    color: #777;
+}
+
+.terms-row {
+    margin: 14px 0;
+    font-size: 14px;
+}
+
+.sign-button {
+    width: 100%;
+    border: 0;
+    padding: 12px;
+    border-radius: 5px;
+    background: #eeb51a;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#message {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.error {
+    color: #c62828;
+}
+
+.success {
+    color: #138a3d;
+}
+
+.login-text {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.login-text a,
+.back-home {
+    color: #9a6c00;
+    text-decoration: none;
+}
+
+.signup-info {
+    background: #07182d;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.signup-info span {
+    color: #eeb51a;
+}
+
+.signup-info img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+@media (max-width: 760px) {
+    .signup-card {
+        flex-direction: column;
+    }
+
+    .form-side,
+    .signup-info {
+        width: 100%;
+    }
+}
